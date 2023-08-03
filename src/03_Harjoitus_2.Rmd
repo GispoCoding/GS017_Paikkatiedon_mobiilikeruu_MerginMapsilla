@@ -30,15 +30,17 @@ Mergin Maps edellyttää palveluunsa kirjautumista, joko yksityishenkilönä tai
 
 ![](img/harjoitus_2/image1.png)
 
-Uusi projekti tulee synkronoida myös Mergin Mapsin pilvipalveluun, johon pääsen kirjautumaan ladatun lisäosan "**hammasratas**"-kuvaketta painamalla. Kun olet kirjautunut verkkopalveluun, pääset samoilla tunnuksilla yhdistämään QGISin mergin mapsin palvelimeen. Jos haluat tulevia sessioita varten tallentaa kirjautumistietosi, laita valinta kohtaan "save your credentials". Custom Mergin Maps server on oletuksena alla olevan kuvan mukaisesti:
+Uusi projekti tulee synkronoida myös Mergin Mapsin pilvipalveluun, johon pääsen kirjautumaan ladatun lisäosan "**hammasratas**"-kuvaketta painamalla. Kun olet kirjautunut verkkopalveluun, pääset samoilla tunnuksilla yhdistämään QGISin Mergin Mapsin palvelimeen. Jos haluat tulevia sessioita varten tallentaa kirjautumistietosi, laita valinta kohtaan "save your credentials". Custom Mergin Maps server on oletuksena alla olevan kuvan mukaisesti:
 
 ![](img/harjoitus_2/image2.png)
 
-Yhteyttä muodostaessa ohjelma saattaa herjata virhettä, että annetun serverin URL-osoite on väärä. Tähän ongelmaan voi kokeilla ratkaisuksi muuttaa QGISin käyttäjäprofiilia - eli käytännössä luoda uusi profiili. Uusi profiili tehdään ylävalikosta **Asetukset-käyttäjäprofiilit-uusi profiili.** Uusi käyttäjäprofiili asettaa QGIS-ohjelman oletustilaan, eli tällöin Mergin-lisäosa tulee asentaa uudestaan. Käyttäjäprofiileja luomalla voi myös luoda itselleen erilaisia työtiloja, mikäli työskentelee hyvin erilaisten projektien ja työkalujen kanssa.
+::: hint-box
+Yhteyttä muodostaessa ohjelma saattaa joskus herjata virhettä, että annetun serverin URL-osoite on väärä. Tähän ongelmaan voi kokeilla ratkaisuksi muuttaa QGISin käyttäjäprofiilia - eli käytännössä luoda uusi profiili. Uusi profiili tehdään ylävalikosta **Asetukset-käyttäjäprofiilit-uusi profiili.** Uusi käyttäjäprofiili asettaa QGIS-ohjelman oletustilaan, eli tällöin Mergin-lisäosa tulee asentaa uudestaan. Käyttäjäprofiileja luomalla voi myös luoda itselleen erilaisia työtiloja, mikäli työskentelee hyvin erilaisten projektien ja työkalujen kanssa.
 
 ![](img/harjoitus_2/image3.png)
+:::
 
-Omalle tilille pääset kirjautumaan myös selaimen kautta osoitteessa: <https://app.merginmaps.com/login>. Selaimen kautta pääset tarkastelemaan kaikkia tilin projekteja ja käyttäjiä sekä muuttamaan asetuksia. Selaimen kautta voit myös luoda uusia projekteja ja jakaa niitä eri käyttäjille.
+Omalle tilille pääset kirjautumaan myös selaimen kautta osoitteessa: <https://app.merginmaps.com/login>. Selaimen kautta pääset tarkastelemaan kaikkia tilin projekteja ja käyttäjiä sekä muuttamaan asetuksia ja tarkastelemaan historiatietoja. Selaimen kautta voit myös luoda uusia projekteja ja jakaa niitä eri käyttäjille.
 
 ## **Mergin-lisäosan käyttö**
 
@@ -46,7 +48,7 @@ Kirjautumisen jälkeen voit luoda uuden projektin työkalun plus-ikonia painamal
 
 ![](img/harjoitus_2/image4.png)
 
-Kun lähdetään luomaan täysin uutta sisältöä, valitaan "New basic QGIS project". Jos sinulla on jo olemassa valmis QGIS projekti, jonka haluat kääntää mobiililaitteelle, valitse "Package current QGIS project". MIkäli olet kirjautunut oikein, työtilan kohdalla pitäisi olla, tai pitäisi olla valittavissa tilisi. Anna projektille haluamasi nimi kohtaan "Project Name". Älä tee projektista julkista (ainakaan vielä), joten jätä valitsematta "Make the project public". Uusi projekti tallentuu myös koneellesi, joten valitse vielä tiedostolähteeksi sama kansio, mihin projektitiedosto on tallennettu koneellasi.
+Kun lähdetään luomaan täysin uutta sisältöä, valitaan "New basic QGIS project". Jos sinulla on jo olemassa valmis QGIS projekti, jonka haluat kääntää mobiililaitteelle, valitse "Package current QGIS project". Klikataan siis "New basic QGIS project". Mikäli olet kirjautunut oikein, työtilan kohdalla pitäisi olla, tai pitäisi olla valittavissa tilisi. Anna projektille haluamasi nimi kohtaan "Project Name". Älä tee projektista julkista (ainakaan vielä), joten jätä valitsematta "Make the project public". Uusi projekti tallentuu myös koneellesi, joten valitse vielä tiedostolähteeksi sama kansio, mihin projektitiedosto on tallennettu koneellasi.
 
 ![](img/harjoitus_2/image5.png)
 
@@ -69,16 +71,18 @@ Lisätään nyt taustakartta koko Suomen alueelta käyttäen QGISin **QuickMapSe
 ![](img/harjoitus_2/image8.png)
 
 ::: hintbox
-**Projektiin voi halutessaan lisätä useammankin taustakartan, joita voidaan käyttää QFieldissä yhtäaikaisesti. Tässä voi myös hyödyntää QGISin karttateemat-ominaisuutta.**
+**Projektiin voi halutessaan lisätä useammankin taustakartan, joita voidaan käyttää Mergin Mapsissa yhtäaikaisesti. Tässä voi myös hyödyntää QGISin karttateemat-ominaisuutta.**
 :::
 
 ::: hintbox
-**Digitointia auttamaan saattaisi olla hyödyllistä käyttää lisäksi esimerkiksi ortoilmakuvaa, joka löytyy myös QuickMapServicen "Kapsi"-haulla. Pidetään projekti nyt mahdollisimman yksinkertaisena ja pidetään vain "Kapsi - taustakartta" -taso.**
+\*\*Digitointia auttamaan saattaisi olla hyödyllistä käyttää lisäksi esimerkiksi ortoilmakuvaa, joka löytyy myös QuickMapServicen "Kapsi"-haulla.
 :::
+
+Pidetään projekti nyt mahdollisimman yksinkertaisena ja pidetään vain "Kapsi - taustakartta" -taso.\*\*
 
 ## **Tasojen luonti**
 
-Käytämme tässä kohtaa harjoitusta varten luotua Geopackagea testaamisen nopeuttamiseksi. Myöhemmissä harjoituksissa jalostamme tasoja edelleen ja tutustumme visualisoinnin hienouksiin ja tiedon tallettamisen nopeuttamiseen. Mikäli kuitenkin tarvitset kertausta perusmuotoisen Geopackage-tason luomisessa, ohjeet tämän tekemiseen löydät tämän harjoituksen lopusta osiosta "lisätehtävät". Käy hakemassa kurssihakemistosta kaksi tasoa, "lintuhavainnot" ja "luontoselvitys" vektoritasojen lisäyksen kautta. Molemmat tasot on pakattu saman Geopackagen (luontoselvitys) sisälle.
+Käytämme tässä kohtaa harjoitusta varten luotua GeoPackagea testaamisen nopeuttamiseksi. Myöhemmissä harjoituksissa jalostamme tasoja edelleen ja tutustumme visualisoinnin hienouksiin ja tiedon tallettamisen nopeuttamiseen. Mikäli kuitenkin tarvitset kertausta perusmuotoisen GeoPackage-tason luomisessa, ohjeet tämän tekemiseen löydät tämän harjoituksen lopusta osiosta "lisätehtävät". Käy hakemassa kurssihakemistosta kaksi tasoa, "lintuhavainnot" ja "luontoselvitys" vektoritasojen lisäyksen kautta. Molemmat tasot on pakattu saman GeoPackagen (luontoselvitys) sisälle.
 
 Järjestä vielä projektiin luodut tasot Tasot-paneelissa, kuten alla olevassa kuvassa. Järjestyksen muuttaminen onnistuu esimerkiksi tasoja "raahaamalla" (ns. drag & drop). Ylempänä listassa olevat taso piirretään alempana olevan päälle, joten on luontevaa, että taustakartta ja polygoni-tasot ovat alimpina. Ajan salliessa, voit myös muuttaa tasojen kuvaustyylejä itsellesi mieleiseksi. Kysy tarvittaessa apua kouluttajalta.
 
@@ -132,11 +136,11 @@ Tarkastellaan ensiksi "Tasot"-välilehteä. Klikkaamalla **tasot**-välilehteä 
 
 ## **Digitointitila**
 
-Tarkastellaan vielä juuri luodulla projektillamme kuinka piste- ja aluekohteiden digitointi tapahtuu.. Emme ole vielä määrittäneet ominaisuustietojen syöttötapaa sen tarkemmin, vaan käytössä on oletusasetukset. Tietojen syöttäminen helpottuu ja tehostuu kuitenkin merkittävästi seuraavan harjoituksen jälkeen. Perehdymme nimittäin siinä tarkemmin QGISin lomakkeiden käyttöön ja automatisointiin Merginissä Mapsissa.
+Tarkastellaan vielä juuri luodulla projektillamme kuinka piste- ja aluekohteiden digitointi tapahtuu. Emme ole vielä määrittäneet ominaisuustietojen syöttötapaa sen tarkemmin, vaan käytössä on oletusasetukset. Tietojen syöttäminen helpottuu ja tehostuu kuitenkin merkittävästi seuraavan harjoituksen jälkeen. Perehdymme nimittäin siinä tarkemmin QGISin lomakkeiden käyttöön ja automatisointiin Mergin Mapsissa.
 
 ![](img/harjoitus_2/image18.png)
 
-Paina "Tallenna" -painiketta jonka jälkeen osoitin muuttuu "tähtäimeksi". Alhaalta voi valita muokattavan tason (projektissamme lintuhavainnot tai luontotyyppi) ja sitten painaa alhaalta "lisää". Mikäli aktiivisena on aluetaso, piirrä mieluisa alue, tai pistetasolla syötä uusi piste ja paina sitten "valmis". Tämän jälkeen sinulle aukeaa tason attribuuttitaulukko niillä tasoilla, joita aiemmin QGISin puolella loimme. Tässä kohtaa voit antaa "Laji" tai "luontotyyppi" sarakkeelle mieluisan nimen ja painamalla kalenterisymbolia ohjelma syöttää automaattisesti ajan. Voit kokeilla täyttää myös muita sarakkeita manuaalisesti. Huomaat että taulukkomuodolla on väliä - Esim. pinta-ala-sarakkeessa pystyt syöttämään vain numeerisia arvoja. Kun olet valmis paina tallenna, ja uusi alue tai piste ilmestyy kartalle.
+Paina "Tallenna" -painiketta jonka jälkeen osoitin muuttuu "tähtäimeksi". Alhaalta voi valita muokattavan tason (projektissamme lintuhavainnot tai luontotyyppi) ja sitten painaa alhaalta "Lisää". Mikäli aktiivisena on aluetaso, piirrä mieluisa alue, tai pistetasolla syötä uusi piste ja paina sitten "Valmis". Tämän jälkeen sinulle aukeaa tason attribuuttitaulukko niillä tasoilla, joita aiemmin QGISin puolella loimme. Tässä kohtaa voit antaa "Laji" tai "luontotyyppi" sarakkeelle mieluisan nimen ja painamalla kalenterisymbolia ohjelma syöttää automaattisesti ajan. Voit kokeilla täyttää myös muita sarakkeita manuaalisesti. Huomaat että taulukkomuodolla on väliä - Esim. pinta-ala-sarakkeessa pystyt syöttämään vain numeerisia arvoja. Kun olet valmis paina tallenna, ja uusi alue tai piste ilmestyy kartalle ja synkronoituu automaattisesti pilvipalveluun (jos tämä on aktivoituna asetuksissa).
 
 ![](img/harjoitus_2/image19.png)
 

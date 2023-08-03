@@ -22,7 +22,7 @@ Tässä harjoituksessa muokataan projektissa olevien tasojen tietojen syötön l
 
 ## **Ominaisuustietolomakkeen muokkaus**
 
-Avaa QGISissa **Lintuhavainnot**-tason ominaisuudet klikkaamalla hiiren oikealla napilla **Tasot**-paneelista tason kohdalta. Valitse **Ominaisuudet...** ja mene **Attribuuttilomake**-välilehdelle. Valitse välilehdellä ylhäällä olevasta pudotusvalikosta **Drag and Drop Designer** -tila (suom. Raahaa ja pudota -muokkain) automaattisen sijaan. Tässä lomakkeeseen sisällytettävät kentät on välilehden keskimmäisessä, **Lomakenäkymä**-nimisessä (ent. taitosta) sarakkeessa. Tähän voidaan lisätä objekteja vasemmanpuolimmaisesta sarakkeesta keskimmäiseen raahaamalla. Samoin tarpeettomia vimpaimia ja kenttiä voi poistaa lomakkeen taitosta klikkaamalla kyseistä objektia ja poistamalla se punaisesta miinus-nappulasta (kts. kuva). Drag and Drop Designer -näkymässä voidaan myös ryhmitellä lomakkeen kenttiä esimerkiksi eri välilehtiin ja nämä ryhmitykset toimivat myös Mergin Maps Inputin käyttöliittymässä.
+Avaa QGISissa **Lintuhavainnot**-tason ominaisuudet klikkaamalla hiiren oikealla napilla **Tasot**-paneelista tason kohdalta. Valitse **Ominaisuudet...** ja mene **Attribuuttilomake**-välilehdelle. Valitse välilehdellä ylhäällä olevasta pudotusvalikosta **Drag and Drop Designer** -tila (suom. Raahaa ja pudota -muokkain) automaattisen sijaan. Tässä lomakkeeseen sisällytettävät kentät on välilehden keskimmäisessä, **Lomakenäkymä**-nimisessä (ent. taitosta) sarakkeessa. Tähän voidaan lisätä objekteja vasemmanpuolimmaisesta sarakkeesta keskimmäiseen raahaamalla. Samoin tarpeettomia vimpaimia ja kenttiä voi poistaa lomakkeen taitosta klikkaamalla kyseistä objektia ja poistamalla se punaisesta miinus-nappulasta (kts. kuva). Drag and Drop Designer -näkymässä voidaan myös ryhmitellä lomakkeen kenttiä esimerkiksi eri välilehtiin ja nämä ryhmitykset toimivat myös Mergin Maps käyttöliittymässä.
 
 Pidetään nyt kuitenkin kaikki kentät samassa välilehdessä. Poistetaan sen sijaan lomakenäkymästä kentät **fid** sekä **uuid**, joita ei lomakkeessa haluta manuaalisesti lisätä. **Lomakenäkymä** -sarakkeessa voi myös muuttaa lomakkeen kenttien järjestystä raahaamalla. Muokkaa nyt kenttien järjestys alla olevan kuvan **Taitosta**-osion  mukaiseksi.
 
@@ -60,9 +60,17 @@ Luonti ja muokkaus eroavat toisistaan siinä, että kohde luodaan vain kerran, k
 
 Myös luonti- ja muokkausaika-kentille pätee sama, mitä edellä sanottiin luonnista ja muokkauksesta, ja ne käsitellään kumpikin melko samalla tavalla. Valitse kummallekin Widgetin tyypiksi **Päivä/Aika**. Näidenkin tietojen syöttö halutaan automatisoida, ja tämä onnistuu käyttämällä QGISin sisäistä funktiota **now()**, joka kirjoitetaan **Oletusarvo**-kohtaan kummallekin kentälle. **Muokattava, oletusarvon päivitys** ja **null-ehdot** määritetään täsmälleen kuten edellä **Luoja-** ja **Muokkaaja**-kentille ohjeistettiin.
 
+::: hint-box
+Jos haluat muotoilla Päivä/Aika muotoa käytä format_date komentoa. Esim. format_date(now(),'dd.MM.yyyy klo hh:MM') muotoilee päiväyksen ja kellonajan esimerkiksi näin 03.08.2023 klo 14:08
+:::
+
 ## **Kohteen uuid-kenttä**
 
 Vaikka uuid-tietokenttä poistettiinkin taitosta tarpeettomana tietona, määritetään nyt miten kyseinen tieto kohteelle syötetään. Tässäkin apuun tuleen QGISin sisäinen funktio nimeltä **uuid()**, joka luo tarvittavan UUID-koodin. Klikkaa vasemmanpuoleisesta Käytettävissä olevat widgetit -sarakkeesta kohtaa uuid. Pidä widgetin tyyppinä **Tekstin muokkaus**, mutta mene jälleen **Oletusarvo**-osioon ja kirjoita oletusarvoksi funktio **uuid()**. Poista myös **Muokattava**- sekä **Käytä oletusarvoa päivityksessä** -valinnat, sillä kun kohde on luotu, UUID:n ei tule enää muuttua.
+
+::: hint-box
+Mikä on UUID? UUID (**U**niversal **U**nique **Id**entifier) on Open Software Foundationin (OSF) määrittelemä yksilöintijärjestelmä. Tällä tarkoitetaan kohteen kiinteän kokoista uniikkia tunnistetta. Generointi toteutetaan valmiiksi ohjelmointiympäristössä suoraan funktiokutsun avulla.
+:::
 
 ## **Lomakkeen välilehdet**
 
@@ -73,6 +81,12 @@ Vaikka lisättäviä ominaisuustietoja ei nykyisessä projektissamme aivan valta
 Tämän jälkeen voit klikata OK, jolloin attribuuttilomakkeen muutokset tulevat voimaan QGIS-projektissa. Muista tallentaa myös projektitiedosto pikanäppäimellä **CTRL + T** tai päävalikosta **Projekti \> Tallenna**. Muista myös synkronoida projekti Mergin Maps pilvipalveluun.
 
 ![](img/harjoitus_3/image5.png)
+
+::: hint-box
+Voit asettaa myös välilehdille ehdot joiden mukaan ne tulevat näkyviin. Esimerkiksi kun käyttäjä antaa toiseen kenttään tietyn arvon ilmestyy vasta haluttu välilehti näkyviin. Lisää tästä ominaisuudesta [dokumentaatiossa](https://merginmaps.com/docs/layer/settingup_forms_settings/#tabs-and-groups "Show and hide field depending on a field value")
+
+![](img/harjoitus_4/image10.png)
+:::
 
 ## **Näyttö ja kohdelistaus**
 
@@ -94,9 +108,15 @@ Määritellään tässä kohtaa projektille vielä toinen digitointia käytänn�
 
 ![](img/harjoitus_3/image7.png)
 
-## **Lomakkeet Inputissa**
+::: hint-box
+Mergin Maps projektin tarttumisasetuksia voidaan vielä tarkemmin räätälöidän Projektin ominaisuuksissa. Projekti --\> Ominaisuudet. Voit valita noudattaako Mergin Maps oletus tartuntaa, noudattaako se QGISin tartuntaa tai valita ettei tartuntaa ole ollenkaan
 
-Voit testata nyt miltä lomake näyttää tehdyillä muutoksilla. Päivitä projekti jälleen Merginin pilvipalveluun ja testaa Inputissa. Voit lisätä uusia kohteita tai vain selata olemassa olevien kohteiden attribuuttitietoja. Kummassakin tapauksessa näet aukeavassa lomakkeessa luodut välilehdet (perustiedot ja metatiedot). Pääset liikkumaan välilehdeltä toiselle joko klikkaamalla välilehden otsikkoa tai liu'uttamalla näyttöä sormella sivulle.
+![](img/harjoitus_4/image11.png)
+:::
+
+## **Lomakkeet Mergin Mapsissa**
+
+Voit testata nyt miltä lomake näyttää tehdyillä muutoksilla. Päivitä projekti jälleen Merginin pilvipalveluun ja testaa Mergin Mapsissa. Voit lisätä uusia kohteita tai vain selata olemassa olevien kohteiden attribuuttitietoja. Kummassakin tapauksessa näet aukeavassa lomakkeessa luodut välilehdet (perustiedot ja metatiedot). Pääset liikkumaan välilehdeltä toiselle joko klikkaamalla välilehden otsikkoa tai liu'uttamalla näyttöä sormella sivulle.
 
 ![](img/harjoitus_3/image8.png)
 
@@ -105,5 +125,6 @@ Voit testata nyt miltä lomake näyttää tehdyillä muutoksilla. Päivitä proj
 ::: hint-box
 **Psst! Koulutuksen jälkeen saat henkilökohtaista tukea Gispon tukipalvelusta. Lähetä kysymyksesi tai kommenttisi osoitteeseen tuki\@gispo.fi!**
 :::
+
 \
 \

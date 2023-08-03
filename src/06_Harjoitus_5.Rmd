@@ -2,11 +2,11 @@
 
 **Harjoituksen sisältö**
 
-Harjoituksessa syvennytään QFieldin edistyneempiin ominaisuuksiin joita ei vielä ole käsitelty, ja jotka voivat olla hyödyllisiä paikkatietojen mobiilikeruun tehostamiseksi käytännössä
+Harjoituksessa syvennytään Mergin Mapsin edistyneempiin ominaisuuksiin joita ei vielä ole käsitelty, ja jotka voivat olla hyödyllisiä paikkatietojen mobiilikeruun tehostamiseksi käytännössä
 
 **Harjoituksen tavoite**
 
-Koulutettava oppii käyttämään etenkin mobiililaitteen paikannusta mobiilikeruun tehostamiseksi QFieldin kanssa toimiessa.
+Koulutettava oppii käyttämään etenkin mobiililaitteen paikannusta mobiilikeruun tehostamiseksi Mergin Mapsin kanssa toimiessa.
 
 **Arvioitu kesto**
 
@@ -14,7 +14,7 @@ Koulutettava oppii käyttämään etenkin mobiililaitteen paikannusta mobiiliker
 
 ## **Valmistautuminen**
 
-Avaa Mergin Maps, ja klikkaa sen etusivulta viimeisin versio QField-kurssiprojektista. Tämän harjoituksen aikana voi helpottaa jos pystyt hieman liikkumaan lähiympäristössä. Varaudu siis tarvittaessa käymään lyhyesti esimerkiksi ulkona.
+Avaa Mergin Maps, ja klikkaa sen etusivulta viimeisin versio Mergin Maps-kurssiprojektista. Tämän harjoituksen aikana voi helpottaa jos pystyt hieman liikkumaan lähiympäristössä. Varaudu siis tarvittaessa käymään lyhyesti esimerkiksi ulkona.
 
 ## **Laitteen paikannuksen käyttäminen**
 
@@ -24,7 +24,7 @@ Testaa nyt paikannuksen käyttöä, jotta niiden sujuva käyttö onnistuu. Käyt
 
 ## **Edistyneemmät digitointityökalut**
 
-Edellä käsitelly jäljitys-toiminnon lisäksi, QFieldissä on mukana useita QGISista tuttuja toiminnallisuuksia, jotka ovat hyödyllisiä etenkin viiva- ja monikulmiotasoja editoidessa: tarttuminen, topologinen editointi, taitepistetyökalu sekä halkaisu-, uudelleenmuotoilu- ja Täytä piiri -työkalut. Tutustutaan nyt näistä yleisempiin.
+Edellä käsitelly jäljitys-toiminnon lisäksi, Mergin Mapsissa on mukana useita QGISista tuttuja toiminnallisuuksia, jotka ovat hyödyllisiä etenkin viiva- ja monikulmiotasoja editoidessa: tarttuminen, topologinen editointi, taitepistetyökalu sekä halkaisu-, uudelleenmuotoilu- ja Täytä piiri -työkalut. Tutustutaan nyt näistä yleisempiin.
 
 ## **Tarttuminen sekä topologinen editointi**
 

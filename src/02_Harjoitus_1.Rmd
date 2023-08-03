@@ -32,11 +32,11 @@ Olet varmasti tässä kohtaa jo huomannut, että sovelluksen toiminnallisuudet l
 
 ![](img/Harjoitus_1/image4.png)
 
-Avaamalla karttateemat-valikon pääset valitsemaan kahden olemassa olevan teeman välillä. Omassa projektissa samalle aineistoille on mahdollista luoda eri teemoja eri ominaisuustietojen perusteella, mikäli tämä on oman työn kannalta merkityksellistä. Avaamalla jonkin tason tiedot, näet oikealla kynä-symbolin. Klikkaamalla tätä pääset muokkaamaan kyseisen tason sisältöä. Kynäsymboli löytyy myös ominaisuustietovalikon sisältä alhaalta "muokkaa geometriaa", jolla pääset siirtämään tallennetun pisteen sijaintia.
+Avaamalla karttateemat-valikon pääset valitsemaan kahden olemassa olevan teeman välillä. Omassa projektissa samalle aineistoille on mahdollista luoda eri teemoja eri ominaisuustietojen perusteella, mikäli tämä on oman työn kannalta merkityksellistä. Avaamalla jonkin tason tiedot, näet oikealla kynä-symbolin. Klikkaamalla tätä pääset muokkaamaan kyseisen tason sisältöä. Kynäsymboli löytyy myös ominaisuustietovalikon sisältä alhaalta "Muokkaa geometriaa", jolla pääset siirtämään tallennetun pisteen sijaintia.
 
 ![](img/Harjoitus_1/image5.png)
 
-Katsotaan tässä kohtaa vielä asetuksia, jotka löydät Lisää-valikon kautta. Ohjelman pitäisi oletusasetuksena aktivoida puhelimen GPS-paikannin. Mikäli näin ei ole eikä ohjelma avautuessaan erikseen pyydä oikeutta käyttää laitteen sisäistä GPS:ää, laita päälle valinta "seuraa GPS-signaalia kartalla". Tämä vie sinut projektissa nykyiseen sijaintiisi. Asetusten kautta voit myös asettaa ulkoisen GPS-vastaanottimen, mikäli sellaisen käytölle on tarvella tulevissa työtehtävissäsi. Mikäli haluat käyttää automaattista pistetallennusta esimerkiksi kävellessäsi, "Streaming mode" valikosta voit asettaa aika- tai matkaintervallin pistetallennukselle.
+Katsotaan tässä kohtaa vielä asetuksia, jotka löydät Lisää-valikon kautta. Ohjelman pitäisi oletusasetuksena aktivoida puhelimen GPS-paikannin. Mikäli näin ei ole eikä ohjelma avautuessaan erikseen pyydä oikeutta käyttää laitteen sisäistä GPS:ää, laita päälle valinta "seuraa GPS-signaalia kartalla". Tämä vie sinut projektissa nykyiseen sijaintiisi. Asetusten kautta voit myös asettaa ulkoisen GPS-vastaanottimen, mikäli sellaisen käytölle on tarvella tulevissa työtehtävissäsi. Mikäli haluat käyttää automaattista pistetallennusta esimerkiksi kävellessäsi, "Streemaustila" valikosta voit asettaa aika- tai matkaintervallin pistetallennukselle.
 
 ![](img/Harjoitus_1/image6.png)
 
