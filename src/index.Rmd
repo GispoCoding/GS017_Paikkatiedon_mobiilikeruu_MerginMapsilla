@@ -26,7 +26,7 @@ Tämän kurssin tarkoituksena on opastaa sinut Input--ohjelmiston käyttöön. M
 
 ## **Mergin Maps Inputin taustaa**
 
-Input on mobiililaitteille tarkoitettu avoimen lähdekoodin paikkatieto-ohjelmisto. Pääkehittäjänä toimii Englantilainen yritys nimeltä Lutra Consulting. Mergin Mapsin toiminnallisuudet ovat kehittyneet viime vuosina huimasti, ja se onkin käytössä paikkatiedon keruun mobiiliratkaisuna maailmalla melko laajasti. Mergin Mapsin käyttäjämäärää on melko vaikea arvioida, sillä ohjelmistoa ei tarvitse rekisteröidä, sitä voi käyttää useilla laitteilla samanaikaisesti ja jakaa edelleen vapaasti. Heidän oma arvio käyttäjistä on yli 45 000 käyttäjää.
+Mergin Maps on mobiililaitteille tarkoitettu avoimen lähdekoodin paikkatieto-ohjelmisto. Pääkehittäjänä toimii Englantilainen yritys nimeltä Lutra Consulting. Mergin Mapsin toiminnallisuudet ovat kehittyneet viime vuosina huimasti, ja se onkin käytössä paikkatiedon keruun mobiiliratkaisuna maailmalla laajasti. Mergin Mapsin käyttäjämäärää on melko vaikea arvioida, sillä ohjelmistoa ei tarvitse rekisteröidä, sitä voi käyttää useilla laitteilla samanaikaisesti ja jakaa edelleen vapaasti. Heidän oma arvio käyttäjistä on yli 45 000 käyttäjää.
 
 Mergin Maps--ohjelmisto on suunniteltu hyvin yhteensopivaksi QGIS-työpöytäohjelmiston kanssa, ja sikäli täydentää senkin käyttäjäkuntaa ja käyttötapauksia. Tämän lyhyen kurssin aikana käsittelemme vain osaa Mergin Mapsin kaikista toiminnallisuuksista. Kurssin perusteella sinun tulisi kuitenkin oppia Mergin Mapsin käytön perusteet, ja pystyä käyttämään oppimaasi omaan käyttötarkoitukseesi.
 
@@ -38,11 +38,11 @@ Perimmäinen syy Mergin Mapsin käyttöön on tietysti paikkatietoaineistojen hy
 
 -   **Mergin Maps on vapaa**. Jos tarvitset Merginiin lisää ominaisuuksia, sinulla on täysi vapaus laajentaa ja muuttaa Mergin Mapsia. Sinun ei tarvitse odottaa seuraavaa versioita ja toivoa, että tarvitsemasi ominaisuudet ovat sisällytetty mukaan. Jos osaat ohjelmoida, voit lisätä ominaisuudet itse. Voit myös rahoittaa uusien ominaisuuksien kehittämistä osaksi Merginiä.
 
--   **Mergin Maps kehittyy jatkuvasti**. Kuka tahansa voi lisätä tai rahoittaa uusia ominaisuuksia MErgin Mapsiin ja siksi ohjelmisto kehittyy kiihtyvällä vauhdilla. Erilaisten lisäosien avulla on helppo toteuttaa omia prosesseja tukevia toimintoja.
+-   **Mergin Maps kehittyy jatkuvasti**. Kuka tahansa voi lisätä tai rahoittaa uusia ominaisuuksia Mergin Mapsiin ja siksi ohjelmisto kehittyy kiihtyvällä vauhdilla. Erilaisten lisäosien avulla on helppo toteuttaa omia prosesseja tukevia toimintoja.
 
 -   **Mergin Maps on hyvin dokumentoitu**. Mergin Maps sisältää laajan dokumentaation. Koko ajan kasvava käyttäjäyhteisö auttaa mielellään uusia käyttäjiä ja voit myös kysyä apua suoraan sovelluskehittäjiltä.
 
--   **QGIS on järjestelmäriippumaton**. Mergin Mapsia kehitetään Android-käyttöjärjestelmän ohella Windows-, ja iOS-mobiililaitteille.
+-   **QGIS on järjestelmäriippumaton**. Mergin Mapsia kehitetään Android-käyttöjärjestelmän ohella Windows-, iOS- ja Huawei Map Galleria- laitteille.
 
 -   **Mergin Maps on suomenkielinen**. Käyttöliittymä on suomennettu. Myös ruotsinkielinen versio on käytettävissä ilman lisäkustannuksia. Käyttöohjeita, web-sivustoja ja muita materiaaleja kehitetään ja suomennetaan jatkuvasti.
 
