@@ -42,5 +42,6 @@ Katsotaan tässä kohtaa vielä asetuksia, jotka löydät Lisää-valikon kautta
 
 Kun olet tarkastellut asetukset-välilehden toimintoja, voit sulkea ohjelman.
 
+
 \
 \
